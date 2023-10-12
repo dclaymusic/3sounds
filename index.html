@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3 SOUNDS</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            let oneToggle = false;
+            let twoToggle = false;
+            let threeToggle = false;
+
+            function toggle(number)
+            {
+                let i;
+                if(number == 1)
+                {
+                    i = document.getElementById('one');
+                    oneToggle = !oneToggle;
+                    if(oneToggle)
+                    {
+                        i.style.backgroundColor = 'darkred';
+                        i.style.color = 'white';
+                    }
+                    else
+                    {
+                        i.style.backgroundColor = 'black';
+                        i.style.color = 'black'; 
+                    }
+                }
+                if(number == 2)
+                {
+                    i = document.getElementById('two');
+                    twoToggle = !twoToggle;
+                    if(twoToggle)
+                    {
+                        i.style.backgroundColor = 'darkgreen';
+                        i.style.color = 'white';
+                    }
+                    else
+                    {
+                        i.style.backgroundColor = 'black';
+                        i.style.color = 'black'; 
+                    }
+                }
+                if(number == 3)
+                {
+                    i = document.getElementById('three');
+                    threeToggle = !threeToggle;
+                    if(threeToggle)
+                    {
+                        i.style.backgroundColor = 'darkblue';
+                        i.style.color = 'white';
+                    }
+                    else
+                    {
+                        i.style.backgroundColor = 'black';
+                        i.style.color = 'black'; 
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>3 &nbsp; S O U N D S</h1>
+        <main>
+            <div id="one" onclick="toggle(1)">1</div>
+            <div id="two" onclick="toggle(2)">2</div>
+            <div id="three" onclick="toggle(3)">3</div>
+        </main>
+    </body>
+</html>
